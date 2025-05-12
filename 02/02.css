@@ -1,0 +1,105 @@
+/* 전체선택자 */
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* 조상-자손 선택자 */
+header ul {
+    background-color: green;
+    color: white;
+}
+
+/* 부모-자식 선택자 */
+footer>ul {
+    background-color: black;
+    color: #ffffff;
+}
+
+class {
+    color: red;
+}
+
+/* 속성선택자 */
+h2[class] {
+    color: green;
+
+}
+
+/* 클래스선택자 */
+.g1 {
+    /* 배경색과 글자색 */
+    background-color: yellow;
+    color: black;
+
+    /* 가로와 세로 넓이 */
+    width: 700px;
+    height: 70px;
+
+    /* 안쪽여백 */
+    padding: 10px;
+
+    /* 바깥여백 */
+    margin: 10px;
+
+    /* 박스 사이징 */
+    box-sizing: border-box;
+
+    display :flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 클래스선택자 */
+.g2 {
+    background-color: red;
+    color: aliceblue;
+}
+
+/* 아이디선택자 */
+#html {
+    background-color: blue;
+    color: aliceblue;
+    
+}
+
+/* 그룹 (,로 구분지으면 됨)*/
+#s1,
+#s2 {
+    background-color: gray;
+}
+
+/* strong {
+    display: block;
+    background-color: bisque;
+    width: 500px;
+    height: 50px
+} */
+
+/* 구글폰트 */
+article>p {
+    font-family: "Gugi", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+/* 플렉스박스 설정 */
+.fbox{
+    display : flex;
+    flex-direction: row;
+}
+
+.fbox>div{
+    margin-right : 20px;
+}
+/* 이미지 둥글게 */
+img{
+    border-radius: 50pX;
+}
+
+ul{
+    list-style: none;
+    display : flex; 
+}
