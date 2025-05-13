@@ -1,105 +1,132 @@
-/* 전체선택자 */
 * {
     padding: 0px;
     margin: 0px;
-
 }
 
-/* 조상-자손 선택자 */
-header ul {
-    background-color: green;
-    color: white;
+body {
+    width: 80%;
+    margin-left: 10%;
 }
 
-/* 부모-자식 선택자 */
-footer>ul {
-    background-color: black;
-    color: #ffffff;
-}
-
-class {
-    color: red;
-}
-
-/* 속성선택자 */
-h2[class] {
-    color: green;
-
-}
-
-/* 클래스선택자 */
-.g1 {
-    /* 배경색과 글자색 */
-    background-color: yellow;
-    color: black;
-
-    /* 가로와 세로 넓이 */
-    width: 700px;
-    height: 70px;
-
-    /* 안쪽여백 */
-    padding: 10px;
-
-    /* 바깥여백 */
-    margin: 10px;
-
-    /* 박스 사이징 */
+header,main {
+    background-color: aliceblue;
     box-sizing: border-box;
+    padding-bottom: 10px;
+}
 
-    display :flex;
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    padding: 5px;
+    margin: 2px;
+}
+
+article {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+article>h1 {
+    display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
-/* 클래스선택자 */
-.g2 {
-    background-color: red;
-    color: aliceblue;
+article>p {
+    padding : 30px 50px;
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
-/* 아이디선택자 */
-#html {
-    background-color: blue;
-    color: aliceblue;
+nav {
+    display: flex;
+}
+
+#menu1 a {
+    text-decoration: none;
+    background-color: rgba(135, 225, 248, 0.836);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu1 a:hover {
+    background-color: brown;
+}
+
+#menu2 a:visited {
+    background-color: yellowgreen;
+}
+
+.textred{
+    color : red;
+}
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+section>h2 {
+    margin-bottom: 20px;
+    /* border: 1px dotted gold; */
+    background-color: rgb(205, 229, 245);
+    border-radius: 10px;
+    padding : 7px;
     
 }
 
-/* 그룹 (,로 구분지으면 됨)*/
-#s1,
-#s2 {
-    background-color: gray;
+.fbox {
+    display: flex;
 }
 
-/* strong {
-    display: block;
-    background-color: bisque;
-    width: 500px;
-    height: 50px
-} */
-
-/* 구글폰트 */
-article>p {
-    font-family: "Gugi", sans-serif;
-    font-weight: normal;
+.fbox>div {
+    margin-right: 20px;
+    width: 20%;
+}
+.fbox>p {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    /* border: 1px blue solid; */
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
-    font-size: 20px;
 }
-/* 플렉스박스 설정 */
-.fbox{
-    display : flex;
-    flex-direction: row;
-}
-
-.fbox>div{
-    margin-right : 20px;
-}
-/* 이미지 둥글게 */
 img{
-    border-radius: 50pX;
+    border-radius: 100%;
 }
 
-ul{
-    list-style: none;
-    display : flex; 
+span {
+    display: contents;
 }
+
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    /* border-radius: 10px; */
+}
+footer>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+} 

@@ -1,0 +1,73 @@
+header,
+main,
+footer {
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid black;
+    margin-top: 10px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: gainsboro;
+    height: 70svh;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main ol {
+    list-style: none;
+    width: 80%;
+    margin-left: 5%;
+}
+
+main li {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+main li:hover {
+    background-color: black;
+    color: white;
+}
+
+footer>ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 5px 20px;
+}
+
+footer a {
+    text-decoration: none;
+    padding-right: 20px;
+    background-color: rgb(156, 228, 250);
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer a:hover,
+#icon:hover,
+#font:hover {
+    background-color: black;
+    color: white;
+}
+
+#icon,
+#font {
+    background-color: rgb(208, 235, 243);
+}
