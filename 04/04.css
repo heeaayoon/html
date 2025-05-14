@@ -1,0 +1,29 @@
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fInput, .fButton{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(163, 168, 173);
+}
+
+.fInput>input{
+    width: 45%;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.fButton>Button{
+    width: 30%;
+    height: 30px;
+    margin: 0px 25px;
+}

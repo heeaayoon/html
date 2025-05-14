@@ -130,3 +130,10 @@ footer>ul {
     align-items: center;
     font-size: small;
 } 
+
+@media screen and (max-width: 1024px){
+    main {
+    width: 100%;
+    margin-left: 0%;
+}
+}
