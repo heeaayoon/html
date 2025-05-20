@@ -1,0 +1,56 @@
+.nlist, .btArea{
+    width : 80%;
+    padding : 10px;
+
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nlist{
+    height: 80px;
+}
+
+.nlist > span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    /* background-color: blue; */
+    color: white;
+    font-weight: bold;
+}
+
+.sp0 {
+    background-color: red;
+}
+
+.sp1 {
+    background-color: orange;
+}
+
+.sp2 {
+    background-color: yellow;
+}
+
+.sp3 {
+    background-color: green;
+}
+
+.sp4 {
+    background-color: blue;
+}
+
+.sp5 {
+    background-color: purple;
+}
+
+#spPlus {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}

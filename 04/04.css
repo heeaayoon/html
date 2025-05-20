@@ -1,4 +1,4 @@
-form{
+form, main>div{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ form{
     border-radius: 10px;
     justify-content:center;
     align-items: center;
-    background-color: rgb(163, 168, 173);
+    /* background-color: rgb(163, 168, 173); */
 }
 
 .fInput>input{
@@ -26,4 +26,14 @@ form{
     width: 30%;
     height: 30px;
     margin: 0px 25px;
+}
+
+.bt04{
+    width: 40%;
+    height : 30px;
+    margin: 0px 5px;
+}
+
+[readonly]{
+    background-color: beige;
 }
