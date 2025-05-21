@@ -1,0 +1,29 @@
+form{
+    width: 80%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px gray double;
+}
+
+.mdiv{
+    width: 45%;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.mdiv >select{
+    width: 80%;
+    height: 40px;
+}
+
+.mdiv>input{
+    width: 60%;
+    height: 20px;
+}
+
+[readonly]{
+    background-color: bisque;
+}
