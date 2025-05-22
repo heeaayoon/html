@@ -10,8 +10,8 @@ form{
 .mdiv{
     width: 45%;
     height: 50px;
-    margin-top: 15px;
-    margin-left: 35px;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .mdiv >select{
@@ -26,4 +26,14 @@ form{
 
 [readonly]{
     background-color: bisque;
+}
+
+[for=txt1]{
+    color: red;
+    font-weight: bold;
+}
+
+[for=txt2]{
+    color: green;
+    font-weight: bold;
 }
