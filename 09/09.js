@@ -1,21 +1,15 @@
 //DOM이 생성이 된 후 -> 요소를 받아옴
 document.addEventListener('DOMContentLoaded', ()=>{
     //<input> 가져오기
-    const num = document.querySelector(".cdiv>input");
+    const num = document.querySelector(".cdiv1>input");
     //<button> 가져오기
-    const bt = document.querySelector(".cdiv>button");
+    const bt = document.querySelector(".cdiv1>button");
     //<img> 가져오기
     const img = document.querySelector(".mdiv>img");
 
-    
-    const bt2 = document.querySelector("#btArea>button");
-    const btBefore = document.querySelector("#btBefore");
-    const btArea = document.querySelector("#btArea");
-    const btCount = document.querySelector("#btCount");
-    btArea.style.display="none"; //해당부분을 화면에 나타나지 않게함 
-    btCount.style.display="none";
-
-    const countNum = document.querySelector("#btCount>input");
+    btAfter.style.display="block"; //해당부분을 화면에 나타나지 않게함  //수정하기
+    const bt2 = document.querySelector(".cdiv2>button");
+    const countNum = document.querySelector(".cdiv2>input");
 
     //flag 변수
     let flag = false; 
@@ -57,13 +51,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
             img.setAttribute("src" , "../img/up.png");
         }else{ //2-3. 입력수가 랜덤수와 같으면 good 이미지
             img.setAttribute("src" , "../img/good.png");
-            btBefore.style.display="none";516
-            btCount.style.display="block";
-            btArea.style.display="block";
+            btBefore.style.display="none";
+            btAfter.style.display="block";
             flag = false;
-            countNum.value = `${count}번 만에 정답을 찾았습니다.`;
-            //document.querySelector(".cdiv>input").innerHTML="";
-            //document.querySelector("button").innerHTML=tags;
+            countNum.value = `${count+1}번 만에 정답을 찾았습니다.`;
             }
         count++;
         console.log(count);
@@ -71,8 +62,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //다시하기 버튼을 누르면,
     bt2.addEventListener('click',()=>{
-        btBefore.style.display="none";
-        btArea.style.display="none";
+        btBefore.style.display="block";
+        btAfter.style.display="none";
         img.src = "../img/what.png";
         //<input>박스를 빈 칸으로 초기화 , 랜덤수도 초기화
         num.value = "";
