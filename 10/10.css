@@ -1,0 +1,40 @@
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.col{
+    border: 1px solid rgb(186, 185, 190);
+    height : 100px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin : 2px;
+}
+
+.mdiv{
+    padding: 10px 0px;
+}
+
+#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : black;
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.mdiv>button{
+}

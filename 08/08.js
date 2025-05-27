@@ -13,7 +13,7 @@
         //input 값도 초기화 
         t1.value = "";
         t2.value = "";
-        t1.focus();
+        t1.focus();f
     }
 
 
