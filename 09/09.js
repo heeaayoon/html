@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const bt = document.querySelector(".cdiv1>button");
     //<img> 가져오기
     const img = document.querySelector(".mdiv>img");
-    
-    btBefore.style.display="none"; //지우기
 
-    btAfter.style.display="block"; //해당부분을 화면에 나타나지 않게함  //수정하기
+    btAfter.style.display="none"; //해당부분을 화면에 나타나지 않게함  
     const bt2 = document.querySelector(".cdiv2>button");
     const countNum = document.querySelector(".cdiv2>input");
 
