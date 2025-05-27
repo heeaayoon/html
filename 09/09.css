@@ -8,7 +8,9 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border : black solid 1px;
+}
+.cdiv2>input, .cdiv2>button{
+    display: block;
 }
 
 #btBefore > button{
@@ -16,7 +18,12 @@ input{
 }
 
 #btAfter > button{
-    margin: 10px;
+    margin: 5px 0px;
     width: 200px;
     background-color: pink;
+}
+
+#btAfter > input{
+    margin: 5px 0px;
+    width: 200px;
 }

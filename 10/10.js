@@ -9,11 +9,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const cols = document.querySelectorAll(".col");
     const bt = document.querySelector(".mdiv>button"); 
     const msg = document.querySelector("#msg");
+    const hbox = document.querySelector(".hbox");
+    const bbox = document.querySelector(".bbox");
     let arr = [0,0,0,0,0,0,0,0,1];
     let flag = false;
     let count = 0;
 
-    
+    bbox.style.display="none";
+
     for(let [idx,col] of cols.entries()){
         //col.innerHTML = idx+1;
         col.addEventListener("click",()=>{
@@ -32,9 +35,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 flag = false;
             }
 
-            if(count==8){
+            if(count==8){ //하트 이미지가 8개 생성되면 -> 나머지 칸에도 하트이미지가 생성됨
                 msg.innerHTML ="성공";
-                cols[arr.indexOf(1)].innerHTML = `<img src ="../img/hart.png"/>`;
+                // cols[arr.indexOf(1)].innerHTML = `<img src ="../img/hart.png"/>`;
+                hbox.style.display="none";
+                bbox.style.display="block";
+                bbox.innerHTML = `<img src ="../img/hart.png"/>`;
                 flag = false;
                 bt.innerHTML = "다시 시작합니다.";
             }
@@ -50,6 +56,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             bt.innerHTML = "게임 중..";
             init(cols);
             count =0;
+            hbox.style.display="block";
+            bbox.style.display="none";
         }
     })
 });
