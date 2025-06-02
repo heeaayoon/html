@@ -18,11 +18,33 @@
         <h1>자바 스크립트 DOM (박스오피스) </h1>
     </header>
     <main class = "mvmain">
+        
         <div class="divdt">
-            <input type="date" id = "dt" name = "dt" max = "2025-05-28">
+            <input type="date" id = "dt" name = "dt">
         </div>
-       <ul class = "mvul">
-       </ul>
+        
+        <form class="divdt">
+            <input type="radio" name = "r1" id = "D" value = "D" checked/>
+            <label for="D">전체</label>
+            <input type="radio" name = "r1" id = "Y" value = "Y"/>
+            <label for="Y">독립예술영화</label>
+            <input type="radio" name = "r1" id = "N" value = "N"/>
+            <label for="N">상업영화</label>
+            <button class = "sub">조 회</button>
+        </form>
+
+        <div class = "contents">
+            <div class = "con">
+                <div class = "poster"> 
+                </div>
+                <div class = "releaseDay"> 
+                </div>
+                <div class = "audi"> 
+                </div>
+            </div>
+            <ul class = "mvul">
+            </ul>
+        </div>
     </main>
     <footer>
         <ul>

@@ -9,33 +9,64 @@
 
 }
 
-.divdt, .mvul{
-    display: flex;
-    flex-direction: column;
-}
-
 .divdt{
     /* border: 1px black solid; */
+    display: flex;
     background-color: white;
     width: 70%;
-    height: 10%;
+    height: 7%;
     justify-content: center;
     align-items: center;
 }
 
-.rankI{
+#Y,#N,#D,.sub{
+    margin-left: 20px;
+}
+
+.sub{
     border: 1px black solid;
+    border-radius: 40px;
+}
+
+.contents{
+    /* border: 1px black solid; */
+    display: flex;
+    width : 80%;
+}
+
+.poster{
+    /* border: 1px black solid; */
+    width: 200px;
+    height: 300px;
+    margin-top: 25px;
+}
+
+.mvul{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 0px;
+    margin-left:auto
+}
+
+
+.ranku,.rankd{
+    /* border: 1px black solid; */
+    margin-left: auto;
+}
+
+.ranku{
+    color: rgb(197, 60, 60);
+}
+
+.rankd{
+    color : rgb(33, 33, 138)
 }
 
 #dt{
     border: none;
-}
-
-.mvul{
-    border: 1px black solid;
-    justify-content: center;
-    width: 70%;
-    padding: 0px;
 }
 
 .mvul>li{
@@ -44,6 +75,8 @@
     list-style: none;
     border: none;
     border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .rank {
@@ -60,5 +93,11 @@
 }
 
 ul>li:hover{
-    background-color: gainsboro;
+    background-color: bla;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }

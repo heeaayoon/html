@@ -9,7 +9,6 @@ const funcA = () =>{
     console.log("C");
 }
 
-
 const funcC = () =>{
     console.log("A");
     setTimeout(()=>{
