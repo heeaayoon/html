@@ -1,5 +1,5 @@
 const getimg=(div, loca) => {
-    const apikey = "%2BDfR5vwd9zvwFHbjCUyNLBbgz8fZB10VqCKEzRJ5U3JyXCq8p78agCH5sd5ZF62Jgg5ma2pmDXPUnD%2FBzoT%2Fhg%3D%3D";
+    const apikey = "";
     let url = `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?serviceKey=${apikey}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&keyword=${loca}&_type=json`
 
     fetch(url)
