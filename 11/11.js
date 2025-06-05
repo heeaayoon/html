@@ -14,7 +14,7 @@ const yesterday =() =>{
 
 const getPoster=(mvNm)=>{
     console.log("getPoster", mvNm);
-    const tmdbApi = "b42483d9af611184a5e87b9980e11075";
+    const tmdbApi = "";
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${tmdbApi}&query=${mvNm}`;
     const poster = document.querySelector(".poster");
     const rDay = document.querySelector(".releaseDay");
@@ -34,7 +34,7 @@ const getPoster=(mvNm)=>{
 const getMvList=(dt,ul,rVal) => {
     console.log(dt)
     //const au = document.querySelector(".audi");
-    const apikey = "d566936dcce384cf137234e5eb3ea70c";
+    const apikey = "";
     let url = `https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${dt}`;
 
     if (rVal== "N"){
