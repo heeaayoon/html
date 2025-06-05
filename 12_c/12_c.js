@@ -1,6 +1,6 @@
 //데이터를 가져오는 함수
 const getData = (input, content) =>{
-    const apiKey = "%2BDfR5vwd9zvwFHbjCUyNLBbgz8fZB10VqCKEzRJ5U3JyXCq8p78agCH5sd5ZF62Jgg5ma2pmDXPUnD%2FBzoT%2Fhg%3D%3D";
+    const apiKey = "";
     const baseUrl = "https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?";
     let url = `${baseUrl}serviceKey=${apiKey}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A`;
     url = `${url}&_type=json&keyword=${input.value}`;
